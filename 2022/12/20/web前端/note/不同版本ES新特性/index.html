@@ -1,0 +1,387 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>野生程序员 | 野生程序员</title><meta name="author" content="Arche"><meta name="copyright" content="Arche"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文汇总了 ES6 至 ES11 使用十分常用的特性，包括正在规划的 ES12，仅涵盖了全部的 ES 特性。详细介绍将使用到 ES6 至 ES11 最新版的可用特性。 新特性 ES6（2015）1、类（类） 1234567891011class Man &amp;#123;  constructor(name) &amp;#123;    this.name &#x3D;  有课前端网;  &amp;#125;  console(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="野生程序员">
+<meta property="og:url" content="https://guizhan.github.io/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/index.html">
+<meta property="og:site_name" content="野生程序员">
+<meta property="og:description" content="本文汇总了 ES6 至 ES11 使用十分常用的特性，包括正在规划的 ES12，仅涵盖了全部的 ES 特性。详细介绍将使用到 ES6 至 ES11 最新版的可用特性。 新特性 ES6（2015）1、类（类） 1234567891011class Man &amp;#123;  constructor(name) &amp;#123;    this.name &#x3D;  有课前端网;  &amp;#125;  console(">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (5).jpg">
+<meta property="article:published_time" content="2022-12-20T06:44:07.395Z">
+<meta property="article:modified_time" content="2022-12-20T06:47:51.833Z">
+<meta property="article:author" content="Arche">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (5).jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://guizhan.github.io/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":300},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Arche","link":"链接: ","source":"来源: 野生程序员","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '野生程序员',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-20 14:47:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/color.css"><meta name="generator" content="Hexo 5.4.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标题</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (5).jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">野生程序员</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标题</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-20T06:44:07.395Z" title="发表于 2022-12-20 14:44:07">2022-12-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-20T06:47:51.833Z" title="更新于 2022-12-20 14:47:51">2022-12-20</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>本文汇总了 ES6 至 ES11 使用十分常用的特性，包括正在规划的 ES12，仅涵盖了全部的 ES 特性。详细介绍将使用到 ES6 至 ES11 最新版的可用特性。</p>
+<h3 id="新特性-ES6（2015）"><a href="#新特性-ES6（2015）" class="headerlink" title="新特性 ES6（2015）"></a><strong>新特性 ES6（2015）</strong></h3><p><strong>1、类（类）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class Man &#123;</span><br><span class="line">  constructor(name) &#123;</span><br><span class="line">    this.name =  有课前端网;</span><br><span class="line">  &#125;</span><br><span class="line">  console() &#123;</span><br><span class="line">    console.log(this.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">const man = new Man( 有课前端网);</span><br><span class="line">man.console(); //  有课前端网</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>2、智能（ES 模块）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 模块 A 导出一个方法</span><br><span class="line">export const sub = (a, b) = a + b;</span><br><span class="line">// 模块 B 导入使用</span><br><span class="line">import &#123; sub &#125; from ./A;</span><br><span class="line">console.log(sub(1, 2)); // 3</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>3、箭头（箭头）函数</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const func = (a, b) = a + b;</span><br><span class="line">func(1, 2); // 3</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>4、函数参数默认值</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">function foo(age = 25,)&#123; // ...&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>5、 模板字符串</strong>​​​​​​​</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const name =  有课前端网;</span><br><span class="line">const str = `Your name is $&#123;name&#125;`;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>6、解构架构</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let a = 1, b= 2;</span><br><span class="line">[a, b] = [b, a]; // a 2  b 1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>7、延展符</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let a = [...hello world]; // [h, e, l, l, o,  , w, o, r, l, d]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>8、对象属性简写</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const name= fly63前端,</span><br><span class="line">const obj = &#123; name &#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>9、承诺</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Promise.resolve().then(() = &#123; console.log(2); &#125;);</span><br><span class="line">console.log(1);</span><br><span class="line">// 先打印 1 ，再打印 2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>10、让和常量</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let name =  有课前端网；</span><br><span class="line">const arr = [];</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="ES7（2016）"><a href="#ES7（2016）" class="headerlink" title="ES7（2016）"></a><strong>ES7（2016）</strong></h3><p><strong>1、 Array.prototype.includes()</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[1].includes(1); // true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>2、指数操作符</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2**10; // 1024</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="ES8（2017）"><a href="#ES8（2017）" class="headerlink" title="ES8（2017）"></a><strong>ES8（2017）</strong></h3><p><strong>1、异步 / 等待</strong></p>
+<p>终极终极解决方案</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">async getData()&#123;</span><br><span class="line">    const res = await api.getTableData(); // await 异步任务</span><br><span class="line">    // do something    </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>2、Object.values()</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object.values(&#123;a: 1, b: 2, c: 3&#125;); // [1, 2, 3]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>3、 Object.entries()</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object.entries(&#123;a: 1, b: 2, c: 3&#125;); // [[a, 1], [b, 2], [c, 3]]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>4、字符串填充</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// padStart</span><br><span class="line">hello.padStart(10); //      hello</span><br><span class="line">// padEnd</span><br><span class="line">hello.padEnd(10) hello</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>5、函数参数列表允许结尾</strong></p>
+<p>规定也一样，职能规定与规则和结尾的逗号，保持一致。</p>
+<p><strong>6、Object.getOwnPropertyDescriptors()</strong></p>
+<p>如果对象的所有自身属性获取一个空，则如果没有返回对象。</p>
+<p><strong>7、SharedArrayBuffer 对象</strong></p>
+<p>SharedArray 对象使用表示一个通用的长度的密封缓冲区，密封，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * </span><br><span class="line"> * @param &#123;*&#125; length 所创建的数组缓冲区的大小，以字节(byte)为单位。</span><br><span class="line"> * @returns &#123;SharedArrayBuffer&#125; 一个大小指定的新 SharedArrayBuffer 对象。其内容被初始化为 0。</span><br><span class="line"> */</span><br><span class="line">new SharedArrayBuffer(10)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>8、原子对象</strong></p>
+<p>Atomics 对象提供了一组静态方法，用于对 SharedArrayBuffer 对象进行<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%8E%9F%E5%AD%90%E6%93%8D%E4%BD%9C&spm=1001.2101.3001.7020">原子操作</a>。</p>
+<h3 id="ES9（2018）"><a href="#ES9（2018）" class="headerlink" title="ES9（2018）"></a><strong>ES9（2018）</strong></h3><p><strong>1、徒劳</strong></p>
+<p>await 可以和 for… 的循环使用，以某种方式运行异步操作</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">async function process(array) &#123;</span><br><span class="line">  for await (let i of array) &#123;</span><br><span class="line">    // doSomething(i);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>2、 Promise.finally()</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Promise.resolve().then().catch(e = e).finally();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>3、Rest/Spread 属性</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const values = [1, 2, 3, 5, 6];</span><br><span class="line">console.log( Math.max(...values) ); // 6</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>4、正则导演组</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const reg = /(year[0-9]&#123;4&#125;)-(month[0-9]&#123;2&#125;)-(day[0-9]&#123;2&#125;)/;</span><br><span class="line">const match = reg.exec(2021-02-23);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>5、正则表达式相反声明</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(=p)、(=p)  p 前面(位置)、p 后面(位置)</span><br><span class="line">(!p)、(!p) 除了 p 前面(位置)、除了 p 后面(位置)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>6、正则表达式 dotAll 模式</strong></p>
+<p>正则表达式中点。除匹配回车外的任何单字符，标记改变这种行为，允许行终止符的出现。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/hello.world/.test(hello\nworld); // false</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="ES10（2019）"><a href="#ES10（2019）" class="headerlink" title="ES10（2019）"></a><strong>ES10（2019）</strong></h3><p><strong>1、Array.flat() 和 Array.flatMap()</strong></p>
+<p>平坦的（）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, [3, 4]].flat(Infinity); // [1, 2, 3, 4]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>平面图（）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3, 4].flatMap(a = [a**2]); // [1, 4, 9, 16]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>2、String.trimStart() 和 String.trimEnd()</strong></p>
+<p>去除字符串首尾字符</p>
+<p><strong>3、String.prototype.matchAll</strong></p>
+<p>matchAll（）为所有匹配的匹配对象返回一个重复器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const raw_arr = test1  test2  test3.matchAll((/t(e)(st(\d))/g));</span><br><span class="line">const arr = [...raw_arr];</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>4、Symbol.prototype.description</strong></p>
+<p>只读属性，返回 Symbol 对象的任选描述的字符串。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Symbol(description).description; // description</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>5、 Object.fromEntries()</strong></p>
+<p>返回一个给定对象本人可枚举属性值的关键值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 通过 Object.fromEntries， 可以将 Map 转化为 Object:</span><br><span class="line">const map = new Map([ [foo, bar], [baz, 42] ]);</span><br><span class="line">console.log(Object.fromEntries(map)); // &#123; foo: bar, baz: 42 &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>6、任选捕获</strong></p>
+<p>在 ES10 之前，我们是这样异常的监护人：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">try &#123;// tryCode</span><br><span class="line">&#125; catch (err) &#123;// catchCode</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这里的 err 是必须的参数，在 ES10 可以省略这个参数。</p>
+<h3 id="ES11（2020）"><a href="#ES11（2020）" class="headerlink" title="ES11（2020）"></a><strong>ES11（2020）</strong></h3><p><strong>1、空值合并操作符（空值处理）</strong></p>
+<p>表达式在的左边求价值，未定义或返回其性质。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">let user = &#123;</span><br><span class="line">    u1: 0,</span><br><span class="line">    u2: false,</span><br><span class="line">    u3: null,</span><br><span class="line">    u4: undefined</span><br><span class="line">    u5: ,</span><br><span class="line">&#125;</span><br><span class="line">let u2 = user.u2  用户2  // false</span><br><span class="line">let u3 = user.u3  用户3  // 用户3</span><br><span class="line">let u4 = user.u4  用户4  // 用户4</span><br><span class="line">let u5 = user.u5  用户5  //</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>2、可选链（任选链）</strong></p>
+<p>用户检测宝宝的孩子</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let user = &#123;&#125;</span><br><span class="line">let u1 = user.childer.name // TypeError: Cannot read property name of undefined</span><br><span class="line">let u1 = user.childer.name // undefined</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>3、Promise.allSettled</strong></p>
+<p>返回在所有给定的承诺中，已被拒绝或被拒绝后的亲，并以一个对象的承诺，每个对象表示。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const promise1 = Promise.resolve(3);</span><br><span class="line">const promise2 = 42;</span><br><span class="line">const promise3 = new Promise((resolve, reject) = reject(我是失败的Promise_1));</span><br><span class="line">const promise4 = new Promise((resolve, reject) = reject(我是失败的Promise_2));</span><br><span class="line">const promiseList = [promise1,promise2,promise3, promise4]</span><br><span class="line">Promise.allSettled(promiseList)</span><br><span class="line">.then(values=&#123;</span><br><span class="line">  console.log(values)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>4、进口（）</strong></p>
+<p>导入导入</p>
+<p><strong>5、新基本数据类型 BigInt</strong></p>
+<p>任意匹配的概率</p>
+<p><strong>6、globalThis</strong></p>
+<ul>
+<li>浏览器：window</li>
+<li>工人：自己</li>
+<li>节点：全局</li>
+</ul>
+<h3 id="ES12（2021）"><a href="#ES12（2021）" class="headerlink" title="ES12（2021）"></a><strong>ES12（2021）</strong></h3><p><strong>1、全部替换</strong></p>
+<p>返回一个全新的字符串，所有符合匹配规则的字符都将被替换掉</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const str = hello world;</span><br><span class="line">str.replaceAll(l, ); // heo word</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>2、Promise.any</strong></p>
+<p>Promise.any() 接收到一个 Promise 就可以没有拒绝，只要其中的一个 promise 成功，就返回那个 promise 。如果已经可以让对象中返回一个 promise 成功（所有的 promise 都失败 /），失败的承诺。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const promise1 = new Promise((resolve, reject) = reject(我是失败的Promise_1));</span><br><span class="line">const promise2 = new Promise((resolve, reject) = reject(我是失败的Promise_2));</span><br><span class="line">const promiseList = [promise1, promise2];</span><br><span class="line">Promise.any(promiseList)</span><br><span class="line">.then(values=&#123;</span><br><span class="line">  console.log(values);</span><br><span class="line">&#125;)</span><br><span class="line">.catch(e=&#123;</span><br><span class="line">  console.log(e);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>3、弱引用</strong></p>
+<p>使用 WeakRefs 的 Class 类创建对对象的弱引用（对对象的弱引用是指当该对象应该被 GC 回收时不会阻止 GC 的回收行为）</p>
+<p><strong>4、逻辑和形式表现</strong></p>
+<p>之间的关系和表现，以及性能结合了之间的关系（和表现）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a ||= b</span><br><span class="line">//等价于</span><br><span class="line">a = a || (a = b)</span><br><span class="line">a = b</span><br><span class="line">//等价于</span><br><span class="line">a = a  (a = b)</span><br><span class="line">a = b</span><br><span class="line">//等价于</span><br><span class="line">a = a  (a = b)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>5、数字字符</strong></p>
+<p>数字间隔性符，可以在数字之间创建可视化分隔符，通过_下划线来分割数字，使数字化可计算。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const money = 1_000_000_000;</span><br><span class="line">//等价于</span><br><span class="line">const money = 1000000000;</span><br><span class="line">1_000_000_000 === 1000000000; // true</span><br><span class="line"></span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://guizhan.github.io">Arche</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://guizhan.github.io/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/">https://guizhan.github.io/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://guizhan.github.io" target="_blank">野生程序员</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (5).jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/TypeScript%20%E7%AC%94%E8%AE%B0/"><img class="next-cover" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (4).jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Arche</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fa-brands fa-tiktok"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到Arche的个人博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E7%89%B9%E6%80%A7-ES6%EF%BC%882015%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">新特性 ES6（2015）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES7%EF%BC%882016%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">ES7（2016）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES8%EF%BC%882017%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">ES8（2017）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES9%EF%BC%882018%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">ES9（2018）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES10%EF%BC%882019%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">ES10（2019）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES11%EF%BC%882020%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">ES11（2020）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES12%EF%BC%882021%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">ES12（2021）</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (5).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/" title="无题">无题</a><time datetime="2022-12-20T06:44:07.395Z" title="发表于 2022-12-20 14:44:07">2022-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/TypeScript%20%E7%AC%94%E8%AE%B0/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (4).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/TypeScript%20%E7%AC%94%E8%AE%B0/" title="无题">无题</a><time datetime="2022-12-20T03:20:40.537Z" title="发表于 2022-12-20 11:20:40">2022-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/Typescript/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/Typescript/" title="无题">无题</a><time datetime="2022-12-19T16:13:18.907Z" title="发表于 2022-12-20 00:13:18">2022-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/%E4%BA%86%E8%A7%A3/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (4).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/%E4%BA%86%E8%A7%A3/" title="无题">无题</a><time datetime="2022-12-19T15:48:58.581Z" title="发表于 2022-12-19 23:48:58">2022-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/Spring/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (4).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/Spring/" title="无题">无题</a><time datetime="2022-12-19T15:38:08.461Z" title="发表于 2022-12-19 23:38:08">2022-12-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Arche</div><div class="footer_custom_text">很高兴认识你</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

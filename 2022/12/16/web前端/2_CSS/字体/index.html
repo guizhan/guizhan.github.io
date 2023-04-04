@@ -1,0 +1,481 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>字体 | 野生程序员</title><meta name="author" content="Arche"><meta name="copyright" content="Arche"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="字体1. 字体相关的样式我们前面讲过的两个属性  color用来设置字体颜色 font-size设置字体大小 em相当与当前元素的一个font-size rem相对于根元素的一个font-size    当然，字体的属性并不止这些 2. font-family（字体格式）font-family字体族（字体的格式）  serif衬线字体 sans-serif非衬线字体 monspace等宽字体 cu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字体">
+<meta property="og:url" content="https://guizhan.github.io/2022/12/16/web%E5%89%8D%E7%AB%AF/2_CSS/%E5%AD%97%E4%BD%93/index.html">
+<meta property="og:site_name" content="野生程序员">
+<meta property="og:description" content="字体1. 字体相关的样式我们前面讲过的两个属性  color用来设置字体颜色 font-size设置字体大小 em相当与当前元素的一个font-size rem相对于根元素的一个font-size    当然，字体的属性并不止这些 2. font-family（字体格式）font-family字体族（字体的格式）  serif衬线字体 sans-serif非衬线字体 monspace等宽字体 cu">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png">
+<meta property="article:published_time" content="2022-12-16T14:12:51.000Z">
+<meta property="article:modified_time" content="2022-12-19T11:21:34.800Z">
+<meta property="article:author" content="Arche">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://guizhan.github.io/2022/12/16/web%E5%89%8D%E7%AB%AF/2_CSS/%E5%AD%97%E4%BD%93/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":300},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Arche","link":"链接: ","source":"来源: 野生程序员","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '字体',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-19 19:21:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/color.css"><meta name="generator" content="Hexo 5.4.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./img/2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标题</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">野生程序员</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标题</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">字体</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-16T14:12:51.000Z" title="发表于 2022-12-16 22:12:51">2022-12-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-19T11:21:34.800Z" title="更新于 2022-12-19 19:21:34">2022-12-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CSS/">CSS</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="字体"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><h2 id="1-字体相关的样式"><a href="#1-字体相关的样式" class="headerlink" title="1. 字体相关的样式"></a>1. 字体相关的样式</h2><p>我们前面讲过的两个属性</p>
+<ul>
+<li><code>color</code>用来设置字体颜色</li>
+<li><code>font-size</code>设置字体大小<ul>
+<li><code>em</code>相当与当前元素的一个<code>font-size</code></li>
+<li><code>rem</code>相对于根元素的一个<code>font-size</code></li>
+</ul>
+</li>
+</ul>
+<p>当然，字体的属性并不止这些</p>
+<h2 id="2-font-family（字体格式）"><a href="#2-font-family（字体格式）" class="headerlink" title="2. font-family（字体格式）"></a>2. font-family（字体格式）</h2><p><code>font-family</code>字体族（字体的格式）</p>
+<ul>
+<li><code>serif</code>衬线字体</li>
+<li><code>sans-serif</code>非衬线字体</li>
+<li><code>monspace</code>等宽字体</li>
+<li><code>cursive</code>手写体</li>
+<li><code>fantasy</code>梦幻字体</li>
+</ul>
+<p>上述字体均不表示的某种字体，而是字体的分类</p>
+<p>我们经常使用的一些字体，如<code>雅黑</code>，<code>黑体</code>，<code>楷体</code>，<code>宋体</code>，<code>Consolas</code>等，才是具体的某种字体</p>
+<p>也就是说。<code>font-family</code>指定字体的类别，浏览器会自动使用该类别下的字体</p>
+<p><code>font-family</code>可以同时指定多个字体，多个字体间使用<code>,</code>隔开</p>
+<p>字体生效是优先选择第一个，第一个无法使用则使用第二个，以此类推</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">font-family</span>: <span class="string">&quot;Courier New&quot;</span>,Courier,monspace;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-几种字体"><a href="#3-几种字体" class="headerlink" title="3. 几种字体"></a>3. 几种字体</h2><p>随便看看就好</p>
+<ul>
+<li><p>手写体</p>
+</li>
+<li><p>艺术体</p>
+</li>
+<li><p>乱码字体</p>
+</li>
+<li><p>中文字体</p>
+</li>
+</ul>
+<h2 id="4-font-face"><a href="#4-font-face" class="headerlink" title="4. @font-face"></a>4. @font-face</h2><p>我们除了可以使用系统自带的字体样式外，还可以在服务器自定义字体位置</p>
+<p><code>@font-face</code>可以将服务器中的字体直接提供给用户去使用</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span>&#123;</span><br><span class="line">  <span class="comment">/* 指定字体名字 */</span></span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;myFont1&quot;</span>;</span><br><span class="line">  <span class="comment">/* 服务器中字体路径 */</span></span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;/font/ZCOOLKuaiLe-Regular.woff&quot;</span>),</span><br><span class="line">    <span class="built_in">url</span>(<span class="string">&quot;/font/ZCOOLKuaiLe-Regular.otf&quot;</span>),</span><br><span class="line">    <span class="built_in">url</span>(<span class="string">&quot;/font/ZCOOLKuaiLe-Regular.ttf&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>); <span class="comment">/* 指定字体格式，一般不写 */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">color</span>: salmon;</span><br><span class="line">  <span class="attribute">font-family</span>: myFont1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>问题</strong></p>
+<ol>
+<li>加载速度：受网路速度影响，可能会出现字体闪烁一下变成最终的字体</li>
+<li>版权：有些字体是商用收费的，需要注意</li>
+<li>字体格式：字体格式也有很多种（woff，otf，ttf），未必兼容，可能需要指定多个</li>
+</ol>
+<h2 id="5-图标字体（iconfont）"><a href="#5-图标字体（iconfont）" class="headerlink" title="5. 图标字体（iconfont）"></a>5. 图标字体（iconfont）</h2><h2 id="6-行高"><a href="#6-行高" class="headerlink" title="6. 行高"></a>6. 行高</h2><p><strong>行高</strong><code>line height</code></p>
+<p>文字占有的实际高度，可以通过<code>line-height</code>来设置行高</p>
+<ul>
+<li>可以直接指定一个大小<code>px</code>/<code>em</code></li>
+<li>也可以直接为行高设置一个小数(字体大小的倍数)</li>
+</ul>
+<p>行高经常还用来设置文字的行间距：<code>行间距 = 行高 - 字体大小</code></p>
+<p><strong>字体框</strong></p>
+<p>字体框就是字体存在的格子，设置<code>font-size</code>实际上就是在设置字体框的高度</p>
+<p>行高会在字体框的上下平均分配</p>
+<p><strong>示例</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">border</span>: <span class="number">1px</span> black solid;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="comment">/* line-height: 100px; */</span></span><br></pre></td></tr></table></figure>
+
+<p>不指定行高时，<code>content</code>高度<code>131.556px</code>：说明<code>line-height</code>默认值大约时<code>1.31</code>~`1.32`（倍数）</p>
+<p>当指定<code>context</code>高度<code>99.556px</code>：少了<code>0.444px</code>,并且字母<code>p</code>下面溢出</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    bordder: <span class="number">1px</span> black solid;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其实就是字体设置了字体大小和行高相同导致的；</p>
+<p><strong>字体的简写属性</strong></p>
+<p><code>font</code>可以设置字体相关的所有属性：</p>
+<p><code>font: font-style font-variant font-weight font-size/line-height font-family</code></p>
+<p>其中某些值可以不写，会用默认值</p>
+<p><strong>默认值</strong></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>默认值</th>
+<th>其他常用值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>font-style</td>
+<td>normal</td>
+<td>italic</td>
+</tr>
+<tr>
+<td>font-variant</td>
+<td>normal</td>
+<td>small-caps</td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>normal</td>
+<td>bold</td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>medium</td>
+<td>small、large</td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>normal</td>
+<td></td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>取决于浏览器</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>示例1</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* font-size: 50px;</span></span><br><span class="line"><span class="comment">font-family: &#x27;Courier New&#x27;, Courier, monospace; */</span></span><br><span class="line"><span class="attribute">font</span>: <span class="number">50px</span> <span class="string">&quot;Courier New&quot;</span>, Courier, monospace;</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例2</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* small-caps值设置小型大写字母字体，所有小写变大写，同时字体尺寸更小（了解即可） */</span></span><br><span class="line"><span class="attribute">font</span>: bold small-caps italic <span class="number">50px</span> <span class="string">&quot;Courier New&quot;</span>, Courier, monospace;</span><br></pre></td></tr></table></figure>
+
+<p>注意：简写属性省略的值会使用默认值，所以会覆盖前面的非简写属性（不仅仅对于字体而言）</p>
+<h2 id="7-文本对齐方式"><a href="#7-文本对齐方式" class="headerlink" title="7. 文本对齐方式"></a>7. 文本对齐方式</h2><p><strong>水平对齐</strong></p>
+<p><code>text-align</code>文本的水平对齐</p>
+<table>
+<thead>
+<tr>
+<th><code>text-align</code>属性值</th>
+<th>对齐方式说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>left</td>
+<td>左侧对齐</td>
+</tr>
+<tr>
+<td>right</td>
+<td>右侧对齐</td>
+</tr>
+<tr>
+<td>center</td>
+<td>居中对齐</td>
+</tr>
+<tr>
+<td>justify</td>
+<td>两端对齐</td>
+</tr>
+</tbody></table>
+<p><code>left</code>左侧对齐（默认）</p>
+<p><code>right</code>右侧对齐</p>
+<p><code>center</code>居中对齐</p>
+<p><code>justify</code>两端对齐</p>
+<p><strong>垂直对齐</strong></p>
+<p><code>vertical-align</code>设置元素垂直对齐的方式</p>
+<table>
+<thead>
+<tr>
+<th><code>vertical-align</code>属性值</th>
+<th>对齐方式说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>baseline</td>
+<td>基线对齐</td>
+</tr>
+<tr>
+<td>top</td>
+<td>顶部对齐</td>
+</tr>
+<tr>
+<td>bottom</td>
+<td>底部对齐</td>
+</tr>
+<tr>
+<td>middle</td>
+<td>居中对齐</td>
+</tr>
+</tbody></table>
+<p><code>baseline</code>基线对齐</p>
+<p><code>top</code>顶部对齐</p>
+<p><code>bottom</code>底部对齐</p>
+<p><code>middle</code>居中对齐</p>
+<p>这里的居中对齐高度 = 基线高度 + x的高度 / 2</p>
+<p>这种居中对齐高度并非实际上的居中对齐，一般也不会用这种方式对文字进行垂直方向的对齐</p>
+<p><code>vertical-align</code>还可以设置px值设置垂直对齐方式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vertical-align</span>: <span class="number">10px</span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-其他的文本样式"><a href="#8-其他的文本样式" class="headerlink" title="8. 其他的文本样式"></a>8. 其他的文本样式</h2><p><strong>设置文本修饰</strong></p>
+<p><code>text-decoration</code>设置文本修饰</p>
+<table>
+<thead>
+<tr>
+<th>text-decoration属性值</th>
+<th>文本修饰方式说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>什么都没有</td>
+</tr>
+<tr>
+<td>underline</td>
+<td>下划线</td>
+</tr>
+<tr>
+<td>line-through</td>
+<td>删除线</td>
+</tr>
+<tr>
+<td>overline</td>
+<td>上划线</td>
+</tr>
+</tbody></table>
+<p><code>none</code>什么都没有</p>
+<p><code>underline</code>下划线</p>
+<p><code>line-through</code>删除线</p>
+<p><code>overline</code>上划线</p>
+<p><strong>示例</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">font-family</span>: 微软雅黑;</span><br><span class="line">    <span class="comment">/*text-decoration: overline;*/</span></span><br><span class="line">    <span class="attribute">text-decoration</span>: underline red dotted;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>设置网页如何处理空白</strong></p>
+<p><code>white-space</code>设置网页如何处理空白</p>
+<table>
+<thead>
+<tr>
+<th>white-space属性值</th>
+<th>设置网页如何处理空白说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>normal</td>
+<td>正常</td>
+</tr>
+<tr>
+<td>nowrap</td>
+<td>不换行</td>
+</tr>
+<tr>
+<td>pre</td>
+<td>保留空白</td>
+</tr>
+</tbody></table>
+<p><strong>示例</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box2</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">text-overflow</span>: ellipsis; <span class="comment">/*溢出部分文本省略*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://guizhan.github.io">Arche</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://guizhan.github.io/2022/12/16/web%E5%89%8D%E7%AB%AF/2_CSS/%E5%AD%97%E4%BD%93/">https://guizhan.github.io/2022/12/16/web%E5%89%8D%E7%AB%AF/2_CSS/%E5%AD%97%E4%BD%93/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://guizhan.github.io" target="_blank">野生程序员</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/12/17/111/"><img class="prev-cover" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/2022/12/14/web%E5%89%8D%E7%AB%AF/2_CSS/%E5%AE%9A%E4%BD%8D%E7%9A%84%E7%AE%80%E4%BB%8B/"><img class="next-cover" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">定位的简介</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/./img/2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Arche</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fa-brands fa-tiktok"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到Arche的个人博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">1.</span> <span class="toc-text">字体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AD%97%E4%BD%93%E7%9B%B8%E5%85%B3%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">1. 字体相关的样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-font-family%EF%BC%88%E5%AD%97%E4%BD%93%E6%A0%BC%E5%BC%8F%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2. font-family（字体格式）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%87%A0%E7%A7%8D%E5%AD%97%E4%BD%93"><span class="toc-number">1.3.</span> <span class="toc-text">3. 几种字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-font-face"><span class="toc-number">1.4.</span> <span class="toc-text">4. @font-face</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%9B%BE%E6%A0%87%E5%AD%97%E4%BD%93%EF%BC%88iconfont%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">5. 图标字体（iconfont）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E8%A1%8C%E9%AB%98"><span class="toc-number">1.6.</span> <span class="toc-text">6. 行高</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E6%96%87%E6%9C%AC%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F"><span class="toc-number">1.7.</span> <span class="toc-text">7. 文本对齐方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E5%85%B6%E4%BB%96%E7%9A%84%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.8.</span> <span class="toc-text">8. 其他的文本样式</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (5).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/note/%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%ACES%E6%96%B0%E7%89%B9%E6%80%A7/" title="无题">无题</a><time datetime="2022-12-20T06:44:07.395Z" title="发表于 2022-12-20 14:44:07">2022-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/TypeScript%20%E7%AC%94%E8%AE%B0/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (4).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/TypeScript%20%E7%AC%94%E8%AE%B0/" title="无题">无题</a><time datetime="2022-12-20T03:20:40.537Z" title="发表于 2022-12-20 11:20:40">2022-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/Typescript/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (1).png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/20/web%E5%89%8D%E7%AB%AF/Typescript/Typescript/" title="无题">无题</a><time datetime="2022-12-19T16:13:18.907Z" title="发表于 2022-12-20 00:13:18">2022-12-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/%E4%BA%86%E8%A7%A3/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (4).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/%E4%BA%86%E8%A7%A3/" title="无题">无题</a><time datetime="2022-12-19T15:48:58.581Z" title="发表于 2022-12-19 23:48:58">2022-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/Spring/" title="无题"><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/9009/10_1 (4).jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/12/19/Java%E6%A1%86%E6%9E%B6/Spring/" title="无题">无题</a><time datetime="2022-12-19T15:38:08.461Z" title="发表于 2022-12-19 23:38:08">2022-12-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Arche</div><div class="footer_custom_text">很高兴认识你</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
